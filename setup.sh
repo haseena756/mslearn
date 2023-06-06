@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-apiappname=ShoeCoAPI$(openssl rand -hex 5)
+apiappname=ShoeCoAPI25
 
 printf "Setting username and password for Git ... (1/7)\n\n"
 
@@ -17,15 +17,12 @@ RESOURCE_GROUP=cloud-shell-storage-eastus
 # Create App Service plan
 PLAN_NAME=myPlan
 
-printf "\nCreating API App ... (3/7)\n\n"
-
-az webapp create --name $apiappname --resource-group $RESOURCE_GROUP --plan $PLAN_NAME --deployment-local-git --verbose
 
 
 printf "\nSetting the account-level deployment credentials ...(4/7)\n\n"
 
 
-DEPLOY_USER=haseena756
+DEPLOY_USER=haseena756@gmail.com
 DEPLOY_PASSWORD=winREG10
 
 az webapp deployment user set --user-name $DEPLOY_USER --password $DEPLOY_PASSWORD --verbose
