@@ -15,14 +15,14 @@ git config --global user.email "$GIT_EMAIL"
 RESOURCE_GROUP=cloud-shell-storage-eastus
 
 # Create App Service plan
-PLAN_NAME=myPlan
+PLAN_NAME=ASP-cloudshellstorageeastus-b57f
 
 
 
 printf "\nSetting the account-level deployment credentials ...(4/7)\n\n"
 
 
-DEPLOY_USER=haseena756@gmail.com
+DEPLOY_USER=haseena756
 DEPLOY_PASSWORD=winREG10
 
 az webapp deployment user set --user-name $DEPLOY_USER --password $DEPLOY_PASSWORD --verbose
